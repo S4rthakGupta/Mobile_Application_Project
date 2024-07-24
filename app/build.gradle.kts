@@ -27,10 +27,6 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
-
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
 }
 
 dependencies {
@@ -41,8 +37,10 @@ dependencies {
     implementation(libs.recyclerview) // Add RecyclerView
     implementation(libs.cardview) // Add CardView
     implementation(libs.room.runtime) // Add Room Runtime
-    kapt(libs.room.compiler) // Add Room Compiler
+    annotationProcessor(libs.room.compiler) // Add Room Compiler
     implementation(libs.picasso) // Add Picasso
+    implementation "androidx.room:room-runtime:2.5.0"
+    annotationProcessor "androidx.room:room-compiler:2.5.0" // For Java
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
