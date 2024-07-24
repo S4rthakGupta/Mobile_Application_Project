@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/productNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Product Name"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productPriceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Price"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/productDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Product Description"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/addToCartButton"
+        android:layout_width="594dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add to Cart" />
+</LinearLayout>
